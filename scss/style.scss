@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    // border: 3px solid green;
 }
 
 .container{
@@ -79,18 +80,23 @@
     }
 
     .express__card:first-child{
-        margin-right: 105px;
+        padding-right: 105px;
     }
 
     .express__card:nth-child(2){
         border-left: 1px solid #D7D7DD;
         padding-left: 64px;
-        margin-right: 121px;
+        padding-right: 121px;
     }
 
     .express__card:last-child{
         border-left: 1px solid #D7D7DD;
         padding-left: 64px;
+    }
+
+    .hero__img{
+        height: 92px;
+        max-width: 92px;
     }
 }
 
@@ -619,4 +625,119 @@
 
 
     }
+}
+
+@media(max-width:1275px){
+    .job{
+        >h4{
+            // padding-top: 100px;
+            padding: 100px 300px 0 300px;
+        }
+    }
+
+    .job__cards{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+}
+
+@media(max-width:1270px){
+    .hero__wrapper{
+        flex-direction: column;
+        .hero__content{
+            padding: 0 16px;
+            >h2{
+                
+                font-size: 44px;
+            }
+            >p{
+                text-wrap: wrap;
+                text-align: center;
+                line-height: 22.5px;
+                padding-left: 55px;
+            }
+            >a{
+                margin-left: 255px;
+            }
+        }
+    }
+
+    .hero__img{
+        width: 690px;
+        height: 450px;  
+    }
+
+    .job{
+        >h4{
+            text-align: left;
+            }
+            >p{
+                text-align: center;
+            }
+    }
+
+    .express__cards{
+        flex-direction: column;
+        max-width: 690px;
+        height: 800px;
+        margin: 0 auto;
+        .express__card{
+            
+            
+        }
+        
+    }
+}
+
+@media(max-width:1237px){
+    .question{
+        background-image: 100%;
+        margin: 0 auto;
+        
+    }
+    .question__cards{
+        justify-content: center;
+        align-items: center;
+     }
+}
+
+
+@media only screen and ( max-width:510px) {
+    .hero__wrapper{
+        flex-wrap: wrap;
+        .hero__content{
+            padding: 0 16px;
+            >h2{
+                max-width: 344px;
+                width: 100%;
+                font-size: 28px;
+                text-wrap: wrap;
+            }
+            >p{
+                text-wrap: wrap;
+                font-size: 15px;
+                text-align: left;
+                line-height: 22.5px;
+            }
+        }
+    }
+     
+    
+   
+    
+    .hero__img{
+        height: 253px;
+        height: 100%;
+        max-width: 345px;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    
+
+    
 }
